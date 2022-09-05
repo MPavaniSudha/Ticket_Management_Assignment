@@ -1,0 +1,46 @@
+{
+  "RaiseTickets": [
+    {
+      "UserName": "Pavani",
+      "Title": "Server Not Responding",
+      "status": "Approved",
+      "Date": "2022-08-11",
+      "id": 1
+    },
+    {
+      "UserName": "Venkat",
+      "Title": "Page is Not Loading",
+      "status": "Pending",
+      "Date": "2022-08-12",
+      "id": 2
+    },
+    {
+      "UserName": "Swetha",
+      "Title": "Server Error",
+      "status": "Pending",
+      "Date": "2022-08-13",
+      "id": 3
+    },
+    {
+      "UserName": "Sowmya",
+      "Title": "Page Buffering",
+      "status": "Approved",
+      "Date": "2022-08-14",
+      "id": 4
+    },
+    {
+      "UserName": "Hanisha",
+      "Title": "Page Error",
+      "status": "Pending",
+      "Date": "2022-08-15",
+      "id": 5
+    },
+    {
+      "UserName": "Kalyani",
+      "Title": "Server Busy",
+      "status": "Pending",
+      "Date": "2022-08-16",
+      "id": 6
+    }
+  ]
+}

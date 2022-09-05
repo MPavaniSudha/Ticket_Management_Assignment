@@ -1,30 +1,47 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+   <q-layout view="lHh Lpr lFf">
+    <q-header elevated class="bg-dark salmon">
+      <q-toolbar class="nav">
+        <q-toolbar-title>
+          Ticket Management
+        </q-toolbar-title>
+      </q-toolbar>
+      <q-tabs class="tab">
+          <q-route-tab
+            :to="{name:'Home'}"
+            replace
+            label="DashBoard"
+            />
+            <q-route-tab
+            :to="{name:'Create'}"
+            replace
+            label="Raise a Ticket"
+            />
+        </q-tabs>
+    </q-header>
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+  </q-layout>
+ 
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<script>
+//import HelloWorld from './components/HelloWorld.vue'
+import {defineComponent} from 'vue'
+export default defineComponent ({
+  name: 'LayoutDefault',
+
+  components: {
+      /* HelloWorld   */
+  },
+})
+</script>
+<style scoped>
+.nav{
+  height: 50px;
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+  font-size: 25;
 }
 </style>
